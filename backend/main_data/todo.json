@@ -1,0 +1,96 @@
+[
+	{
+		"model":"todo.ToDo",
+		"pk":1,
+		"fields": {
+			"title": "Haircut",
+			"description": "See the barber",
+			"completed": true
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":2,
+		"fields": {
+			"title": "Workout",
+			"description": "Yoga Class",
+			"completed": false,
+			"due_date": "2021-01-20T13:17:00+00:00"
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":3,
+		"fields": {
+			"title": "Grocery Shopping",
+			"description": "Fruits and Veggies",
+			"completed": false
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":4,
+		"fields": {
+			"title": "Tiffany's Birthday",
+			"description": "Happy 35th!",
+			"completed": false,
+			"due_date": "2021-02-23T00:00:00+00:00"
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":5,
+		"fields": {
+			"title": "Mail Thank You Cards",
+			"description": "I feel bad for never doing this",
+			"completed": false,
+			"due_date": "2021-01-31T00:00:00+00:00"
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":6,
+		"fields": {
+			"title": "Feed Sourdough Culture",
+			"description": "Pizza this weekend?",
+			"completed": true
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":7,
+		"fields": {
+			"title": "Make copy of keys",
+			"description": "Need these for the cat-sitter",
+			"completed": false
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":8,
+		"fields": {
+			"title": "Call Mom back",
+			"description": "For real though, she's gonna be upset if I forget again",
+			"completed": false,
+			"due_date": "2021-01-15T12:00:00+00:00"
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":9,
+		"fields": {
+			"title": "Edit vacation highlights video",
+			"description": "need to include shots of Dad hiking",
+			"completed": false
+		}
+	},
+	{
+		"model":"todo.ToDo",
+		"pk":10,
+		"fields": {
+			"title": "Order Scallops & Oysters",
+			"description": "seafood extravaganza on Friday!",
+			"completed": false
+		}
+	}
+]
