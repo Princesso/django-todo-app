@@ -55,45 +55,52 @@
         const newItems = this.state.todoList.filter(
           item => item.completed === viewCompleted
         );
-        return newItems.map(item => (
-          <li
-            key={item.id}
-            className="list-group-item d-flex justify-content-between align-items-center"
-          >
-             <div className={"col"}>
-              <span
-                className={`todo-title mr-2 ${
-                  this.state.viewCompleted ? "completed-todo" : ""
-                } row`}
-                title={item.description}
-              >
-                {item.title}
-              </span>
-              <span className="row small">
-                {console.log(item)}
-                Due on: {item.due_date}
-              </span>
-              <span className="row small">
-                Priority: {item.priority}
-              </span>
-            </div>
-            <span>
-              <button
-                onClick={() => this.editItem(item)}
-                className="btn btn-secondary mr-2"
-              >
-                {" "}
-                Edit{" "}
-              </button>
-              <button
-                onClick={() => this.handleDelete(item)}
-                className="btn btn-danger"
-              >
-                Delete{" "}
-              </button>
-            </span>
-          </li>
-        ));
+        return (
+          <div>
+            <h3 className="sticky-top">Todo Items</h3>
+            {
+              newItems.map(item => (
+                <li
+                  key={item.id}
+                  className="list-group-item d-flex justify-content-between align-items-center"
+                >
+                   <div className={"col"}>
+                    <span
+                      className={`todo-title mr-2 ${
+                        this.state.viewCompleted ? "completed-todo" : ""
+                      } row`}
+                      title={item.description}
+                    >
+                      {item.title}
+                    </span>
+                    <span className="row small">
+                      {console.log(item)}
+                      Due on: {item.due_date}
+                    </span>
+                    <span className="row small">
+                      Priority: {item.priority}
+                    </span>
+                  </div>
+                  <span>
+                    <button
+                      onClick={() => this.editItem(item)}
+                      className="btn btn-secondary mr-2"
+                    >
+                      {" "}
+                      Edit{" "}
+                    </button>
+                    <button
+                      onClick={() => this.handleDelete(item)}
+                      className="btn btn-danger"
+                    >
+                      Delete{" "}
+                    </button>
+                  </span>
+                </li>
+            ))}
+          </div>
+        )
+
       };
       toggle = () => {
         this.setState({ modal: !this.state.modal });
