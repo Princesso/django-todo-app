@@ -59,20 +59,17 @@
               <Label for="description">Due Date</Label>
               <Input
                 type="date"
-                name="duedate"
-                value={this.state.activeItem.duedate}
+                name="due_date"
+                value={this.state.activeItem.due_date}
                 onChange={this.handleChange}
                 placeholder="Enter Todo due date"
               />
             </FormGroup>
             <FormGroup>
-              <Label for="priority">Priority(0 - None, 1 - Low, 2- Medium, 3- High)</Label>
+              <Label for="priority">Priority(Low, Medium,High)</Label>
               <Input
-                type="number"
-                min="0"
-                max= "3"
+                type="text"
                 name="priority"
-                step="1"
                 value={this.state.activeItem.priority}
                 onChange={this.handleChange}
                 placeholder="Enter Todo priority"

@@ -60,14 +60,23 @@
             key={item.id}
             className="list-group-item d-flex justify-content-between align-items-center"
           >
-            <span
-              className={`todo-title mr-2 ${
-                this.state.viewCompleted ? "completed-todo" : ""
-              }`}
-              title={item.description}
-            >
-              {item.title}
-            </span>
+             <div className={"col"}>
+              <span
+                className={`todo-title mr-2 ${
+                  this.state.viewCompleted ? "completed-todo" : ""
+                } row`}
+                title={item.description}
+              >
+                {item.title}
+              </span>
+              <span className="row small">
+                {console.log(item)}
+                Due on: {item.due_date}
+              </span>
+              <span className="row small">
+                Priority: {item.priority}
+              </span>
+            </div>
             <span>
               <button
                 onClick={() => this.editItem(item)}
