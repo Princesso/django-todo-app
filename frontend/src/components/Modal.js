@@ -55,6 +55,29 @@
                     placeholder="Enter Todo description"
                   />
                 </FormGroup>
+                <FormGroup>
+              <Label for="description">Due Date</Label>
+              <Input
+                type="date"
+                name="duedate"
+                value={this.state.activeItem.duedate}
+                onChange={this.handleChange}
+                placeholder="Enter Todo due date"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="priority">Priority(0 - None, 1 - Low, 2- Medium, 3- High)</Label>
+              <Input
+                type="number"
+                min="0"
+                max= "3"
+                name="priority"
+                step="1"
+                value={this.state.activeItem.priority}
+                onChange={this.handleChange}
+                placeholder="Enter Todo priority"
+              />
+            </FormGroup>
                 <FormGroup check>
                   <Label for="completed">
                     <Input
