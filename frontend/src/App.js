@@ -62,7 +62,7 @@
               newItems.map(item => (
                 <li
                   key={item.id}
-                  className="list-group-item d-flex justify-content-between align-items-center"
+                  className={`list-group-item d-flex justify-content-between align-items-center ${(new Date(item.due_date).setHours(0,0,0,0) > new Date().setHours(0,0,0,0)) ? "" : "past-todo rounded"}`}
                 >
                    <div className={"col"}>
                     <span
